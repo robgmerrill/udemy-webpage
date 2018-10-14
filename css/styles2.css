@@ -1,7 +1,7 @@
 
 /* css reset stuff */
 
-// default styling given to the whole body of visible content
+/* default styling given to the whole body of visible content */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif; 
@@ -52,11 +52,14 @@ header #main-navigation {
 }
 
 header #main-navigation ul {
+    /* The list-style CSS property is a shorthand for setting the individual values that define how a list is displayed: list-style-type, list-style-image, and list-style-position. */
+        /* none - No list style is used. */
     list-style: none;
     padding: 0;
 }
 
 header #main-navigation ul li {
+    /* The display CSS property defines the display type of an element */
     display: inline-block; 
 }
 
@@ -69,6 +72,8 @@ header #main-navigation ul li a {
 header #main-navigation ul li a:hover {
     background: #444;
     border-radius: 3px;
+    /* The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
     transition: 0.3s ease all;
 } 
 
