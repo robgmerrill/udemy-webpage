@@ -1,6 +1,7 @@
 
 /* css reset stuff */
 
+// default styling given to the whole body of visible content
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif; 
@@ -14,8 +15,11 @@ body {
 /* HEADER STYLES */
 
 header {
+    /* background color */
     background: #222222;
+    /* text color */
     color: #ffffff;
+    // padding top and bottom of 20px - padding left and right of 30px
     padding: 20px 30px;
 }
 
@@ -23,8 +27,8 @@ header {
 
 header #page-header {
     color: white;
-    text-decoration: none;
-    width: 49%;
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+    width: 49%; 
     display: inline-block
 }
 
@@ -58,7 +62,7 @@ header #main-navigation ul li {
 
 header #main-navigation ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
     padding: 10px 15px;
 }
 
@@ -91,8 +95,10 @@ footer img   {
     min-height: 800px;
     text-align: center;
     background: #555;
-    background-image: url('../image/background.jpg');
-    background-size: cover;
+    background-image: url('../image/background.jpg'); /* use image file as background */ 
+    /* The background-size CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions. */
+      /* cover - Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, it is cropped either vertically or horizontally so that no empty space remains. */
+    background-size: cover; 
 }
 
 .hero-content {
